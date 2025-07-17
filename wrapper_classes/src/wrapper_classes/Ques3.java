@@ -6,7 +6,13 @@ public class Ques3 {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		System.out.println(Integer.toBinaryString(n));
+		if(n>1&&n<255) {
+			String s=Integer.toBinaryString(n);
+			String ans=String.format("%8s", s).replace(' ','0');
+			System.out.println(ans);
+		}else {
+			System.out.println("enter the number in between 1 and 255");
+		}
 	}
 
 }
